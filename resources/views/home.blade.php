@@ -46,13 +46,13 @@
         <div class="sidebar-pane" id="settings">
             <h1 class="sidebar-header"><span id="weekTitle">設定</span><span class="sidebar-close"><i class="fas fa-caret-left"></i></span></h1>
             <div>
-                <a href="#" class="btn btn-primary btn-lg btn-block" id="btn-geolocation">回到目前位置</a>
+                <a href="#" class="btn btn-primary btn-lg btn-block mt-3" id="btn-geolocation">回到目前位置</a>
                 <p>
                     <hr />
                 </p>
                 <div class="card">
                     <h5 class="card-title">搜尋</h5>
-                    <div class="form-group">
+                    <div class="mb-3">
                         <label for="findPoint">名稱或代號</label>
                         <input type="text" id="findPoint" name="findPoint" class="form-control"></input>
                     </div>
@@ -66,11 +66,11 @@
                         <label for="selectCounty">縣市</label>
                         <select id="selectCounty" name="selectCounty" class="form-control form-select"></select>
                     </div>
-                    <div class="form-group">
+                    <div class="mb-3">
                         <label for="selectTown">鄉鎮市區</label>
                         <select id="selectTown" name="selectTown" class="form-control form-select"></select>
                     </div>
-                    <div class="form-group">
+                    <div class="mb-3">
                         <label for="selectCunli">村里</label>
                         <select id="selectCunli" name="selectCunli" class="form-control form-select"></select>
                     </div>
