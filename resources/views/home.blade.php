@@ -12,48 +12,48 @@
     <!-- Tab panes -->
     <div class="sidebar-content">
         <div class="sidebar-pane" id="home">
-            <h1 class="sidebar-header"><span id="sidebarTitle">請點選地圖中的點</span><span class="sidebar-close"><i class="fas fa-caret-left"></i></span></h1>
-            <div id="sidebarContent">請點選地圖中的點</div>
+            <h1 class="sidebar-header"><span id="sidebarTitle">{{ __('Please click on the point on the map') }}</span><span class="sidebar-close"><i class="fas fa-caret-left"></i></span></h1>
+            <div id="sidebarContent">{{ __('Please click on the point on the map') }}</div>
             <div class="btn-group-vertical" role="group" style="width: 100%;">
-                <a href="https://forms.gle/XAPs8U5eu56dHsTJ9" target="_blank" class="btn btn-primary btn-lg btn-block">藥局的朋友可以點這裡補充資訊</a>
-                <a href="https://github.com/henryleeworld/laravel-taiwan-mask-stocks-at-national-health-insurance-contracted-pharmacies-map/issues" target="_blank" class="btn btn-primary btn-lg btn-block">網站問題反應</a>
+                <a href="https://forms.gle/XAPs8U5eu56dHsTJ9" target="_blank" class="btn btn-primary btn-lg btn-block">{{ __('Friends from the pharmacy can click here for additional information') }}</a>
+                <a href="https://github.com/henryleeworld/laravel-taiwan-mask-stocks-at-national-health-insurance-contracted-pharmacies-map/issues" target="_blank" class="btn btn-primary btn-lg btn-block">{{ __('Site issue feedback') }}</a>
             </div>
         </div>
         <div class="sidebar-pane" id="book">
-            <h1 class="sidebar-header"><span id="weekTitle">說明</span><span class="sidebar-close"><i class="fas fa-caret-left"></i></span></h1>
+            <h1 class="sidebar-header"><span id="weekTitle">{{ __('Description') }}</span><span class="sidebar-close"><i class="fas fa-caret-left"></i></span></h1>
             <div>
-                圖示說明：
+                {{ __('Illustration description:') }}
                 <ul>
-                    <li><span style="color:#ccc">▲</span>：目前沒有資料，無法判斷庫存情況</li>
-                    <li><span style="color:#48c774">▲</span>：成人口罩 > 100 且兒童口罩 > 25</li>
-                    <li><span style="color:#ffdd57">▲</span>：成人口罩 > 40 且兒童口罩 > 10</li>
-                    <li><span style="color:#fc82b1">▲</span>：成人口罩 > 20 且兒童口罩 > 5</li>
-                    <li><span style="color:#f00">▲</span>：成人口罩
-                        <=2 0 或兒童口罩 <=5 </li>
-                            <li>藍色圓點：你目前所在位置（需要同意網站授權）</li>
+                    <li><span style="color:#ccc">▲</span>{{ __(': There is currently no information and it is impossible to determine the stock situation') }}</li>
+                    <li><span style="color:#48c774">▲</span>{{ __(': Adult masks > 100 and children\'s masks > 25') }}</li>
+                    <li><span style="color:#ffdd57">▲</span>{{ __(': Adult masks > 40 and children\'s masks > 10') }}</li>
+                    <li><span style="color:#fc82b1">▲</span>{{ __(': Adult masks > 20 and children\'s masks > 5') }}</li>
+                    <li><span style="color:#f00">▲</span>{{ __(': Adult masks') }}
+                        <=2 0 {{ __('or children\'s masks') }} <=5 </li>
+                            <li>{{ __('Blue dot: your current location (need to agree to site permission)') }}</li>
                 </ul>
-                注意事項：
+                {{ __('Notice:') }}
                 <ul>
-                    <li>部分藥局因採發放號碼牌方式，方便民眾購買口罩，因目前無法顯示顯示已發送號碼牌數量。若看到剩餘數量，請先電洽藥局</li>
-                    <li>口罩的取得須依政府頒布的規則辦理</li>
-                    <li>庫存數量僅供參考，實際庫存仍以個別單位現場為準</li>
-                    <li>實名制口罩 2.0 及 3.0 將於第 44 輪後劃下完美句點，若仍有購買口罩實名制的需求也請安心！第44輪之後，販賣通路將回歸 1.0 實體通路，社區藥局及無健保特約藥局 58 家偏鄉衛生所持續販售</li>
-                    <li><a href="https://www.nhi.gov.tw/Content_List.aspx?n=395F52D193F3B5C7&topn=787128DAD5F71B1A" target="_blank">健保署說明</a></li>
+                    <li>{{ __('Some pharmacies use the method of taking numbers to facilitate people to purchase masks because they cannot display the number of numbers taken. If you see the remaining quantity, please call the pharmacy first') }}</li>
+                    <li>{{ __('Masks must be obtained following regulations promulgated by the government') }}</li>
+                    <li>{{ __('The stock quantity is for reference only, the actual stock is still subject to the on-site of individual units') }}</li>
+                    <li>{{ __('Real-name masks 2.0 and 3.0 will come to a perfect end after the 44th round. If you still need to buy real-name masks, please feel free! After the 44th round, the sales channel will return to the 1.0 physical channel, and 58 rural health clinics will continue to sell in community pharmacies and special pharmacies without health insurance') }}</li>
+                    <li><a href="https://www.nhi.gov.tw/Content_List.aspx?n=395F52D193F3B5C7&topn=787128DAD5F71B1A" target="_blank">{{ __('Instructions from the National Health Insurance Administration') }}</a></li>
                 </ul>
                 <img src="images/policy.jpg" style="width: 400px;" />
             </div>
         </div>
         <div class="sidebar-pane" id="settings">
-            <h1 class="sidebar-header"><span id="weekTitle">設定</span><span class="sidebar-close"><i class="fas fa-caret-left"></i></span></h1>
+            <h1 class="sidebar-header"><span id="weekTitle">{{ __('Settings') }}</span><span class="sidebar-close"><i class="fas fa-caret-left"></i></span></h1>
             <div>
-                <a href="#" class="btn btn-primary btn-lg btn-block mt-3" id="btn-geolocation">回到目前位置</a>
+                <a href="#" class="btn btn-primary btn-lg btn-block mt-3" id="btn-geolocation">{{ __('Return to current location') }}</a>
                 <p>
                     <hr />
                 </p>
                 <div class="card">
-                    <h5 class="card-title">搜尋</h5>
+                    <h5 class="card-title">{{ __('Search') }}</h5>
                     <div class="mb-3">
-                        <label for="findPoint">名稱或代號</label>
+                        <label for="findPoint">{{ __('Name or number') }}</label>
                         <input type="text" id="findPoint" name="findPoint" class="form-control"></input>
                     </div>
                 </div>
@@ -61,17 +61,17 @@
                     <hr />
                 </p>
                 <div class="card">
-                    <h5 class="card-title">行政區過濾</h5>
+                    <h5 class="card-title">{{ __('Administrative district filtering') }}</h5>
                     <div class="form-group">
-                        <label for="selectCounty">縣市</label>
+                        <label for="selectCounty">{{ __('County') }}</label>
                         <select id="selectCounty" name="selectCounty" class="form-control form-select"></select>
                     </div>
                     <div class="mb-3">
-                        <label for="selectTown">鄉鎮市區</label>
+                        <label for="selectTown">{{ __('Town') }}</label>
                         <select id="selectTown" name="selectTown" class="form-control form-select"></select>
                     </div>
                     <div class="mb-3">
-                        <label for="selectCunli">村里</label>
+                        <label for="selectCunli">{{ __('Village') }}</label>
                         <select id="selectCunli" name="selectCunli" class="form-control form-select"></select>
                     </div>
                 </div>
