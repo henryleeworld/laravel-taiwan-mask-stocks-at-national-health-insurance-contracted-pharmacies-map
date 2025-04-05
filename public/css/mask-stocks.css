@@ -11,9 +11,9 @@ body,
     font: 10pt "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
-.lorem {
-    font-style: italic;
-    color: #AAA;
+a:link {
+    color: #FFD700;
+    font-weight: 900;
 }
 
 .ui-front {
