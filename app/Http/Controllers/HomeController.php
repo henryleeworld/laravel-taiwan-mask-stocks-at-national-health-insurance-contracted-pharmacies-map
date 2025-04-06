@@ -7,9 +7,7 @@ use App\Http\Controllers\Controller;
 class HomeController extends Controller
 {
     /**
-     * Create a new controller instance.
-     *
-     * @return void
+     * Display a listing of the resource.
      */
     public function index()
     {
